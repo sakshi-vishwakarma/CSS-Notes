@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyframea and animations</title>
+    <style>
+        .container{
+        background-color:greenyellow;
+        }
+        .box{
+            background-color:blue;
+            border:3px solid red;
+            width:250px;
+            height:250px;
+            positon:relative;
+            animation-name:annu;
+            animation-duration:3s;
+            animation-iteration-count:3;
+            animation-fill-mode:forwards;
+            aniamtion-timing-funtion:ease-out;
+            animation-delay:2s;
+            animation-direction:reverse;
+        }
+        @keyframes sakshi{
+            from{
+                width:200px;
+            }
+            to{
+                width:500px;
+            }
+        }
+        @keyframes annu{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            25%{
+                top:0px;
+                left:250px;
+                
+            }
+            75%{
+                top:250px;
+                left:250px;
+                
+            }
+            100%{
+                top:250px;
+                left:0px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

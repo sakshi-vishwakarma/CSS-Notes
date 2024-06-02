@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Before AND After Pseudo selectors</title>
+        <style>
+            body{
+                background-color:black;
+                color:white;
+                margin:0px;
+                padding:0px;
+                background:url('me.jpg');
+               opacity:0.5;
+            }
+            section{
+                display:flex;
+                flex-direction:column;
+                margin:3px 23px;
+                
+                align-items:center;
+                height:344px;
+                justify-content:center;
+                
+            }
+            section::before{
+                content:"This is before the section content"
+            }
+            
+            section::after{
+                content:"This is before the section content"
+            }
+            .navigation{
+                display:flex;
+                font-size:20px;
+                font-family:times new roman;
+                background-color:grey
+                
+            }
+            li{
+                list-style:none;
+                padding:23px;
+            }
+            h2{
+                font-size:4rem;
+            }
+            p{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="navigation">
+                    <li class="item">HOME</li>
+                    <li class="item">ABOUT US</li>
+                    <li class="item">SERVICE</li>
+                    <li class="item">CONTACT US</li>
+                </ul>
+            </nav>
+            
+        </header>
+        <section>
+                <h2>Welcome to coding world</h2>
+                <p>This is website for the coding to help you learn about the code as you all know that i am learning with code with harry and trying to get easily understand the code that why i know how to type and i dont  why i am going to know about the thing which is goin got happen.so i finally wasted my time.</p>
+            </section>
+            <hr>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Media queries And More on selectors</title>
+    <style>
+        .box{
+            background-color:red;
+            text-align:center;
+            color:white;
+            font-size:23px;
+            display:none;
+        }
+        @media(max-width:500px){
+            #box1{
+                display:block;
+            }
+        }
+        div + p{
+            background-color:yellow;
+            color:black;
+            font-size:25px;
+            text-align:center;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box" id="box1">I am iphone</div>
+         <div class="box" id="box2">I am Samsung</div>
+          <div class="box" id="box3">I am Tablet</div>
+           <div class="box" id="box4">I am Laptop</div>
+    <h1>This is More on selectors</h1>
+    <div class="conatiner">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is list paragraph</p></li>
+            </ul>
+            <p>This is paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outside the Div</p>
+    
+    
+    </body>
+    
+    
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box shadow and text shadow</title>
+    <style>
+        :root{
+            --box-color:green;
+            --maxw:200px;
+        }
+        .container{
+            display:flex;
+        }
+        .card{
+            padding:23px 14px;
+            border:2px solid black;
+            margin:23px 13px;
+            box-shadow:10px 10px 10px 2px pink;<!-- (x-axis) (y-axis) (blur-radius) (spread-radius) -->
+            box-shadow: inset 10px 10px 2px 2px pink;
+            background-color:#8098ff;
+        }
+        .card h1{
+            text-shadow:-2px 2px white;
+        }
+        .dabba{
+            border:2px solid black;
+            
+
+        }
+        .box{
+                        border:2px solid red;
+            width:200px;
+            height:200px;
+            background-color:var(--box-color);
+            margin:14px 12px;
+            box-shadow:14px 13px var(--box-color);
+        }
+        .newbox{
+            display:flex;
+        }
+        .middle{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h1>This is c++ course</h1>
+        
+        <p>jhgudhg dhgdhbhjdbuyg hgdhgygwfjh sjhjhgsadjkhahghasahgd shgdhsgdhtg hsduyg dhgeygeh deyegf vcd cdmnbycgv bevey e bkw ckwguhvwfvgb dnbdeyhdgbjdbehgd  eyeyhekej efev nuywy nfdvfvufhwbvhjwfyweyfhhifhdfdj ufbefvc</p>
+        </div>
+        <div class="card" id="card2"><h1>This is HTML course.</h1>
+        <p>jhgudhg dhgdhbhjdbuyg hgdhgygwfjh sjhjhgsadjkhahghasahgd shgdhsgdhtg hsduyg dhgeygeh deyegf vcd cdmnbycgv bevey e bkw ckwguhvwfvgb dnbdeyhdgbjdbehgd  eyeyhekej efev nuywy nfdvfvufhwbvhjwfyweyfhhifhdfdj ufbefvc</p>
+        </div>
+        <div class="card" id="card3"><h1>This is web development course.</h1><p>jhgudhg dhgdhbhjdbuyg hgdhgygwfjh sjhjhgsadjkhahghasahgd shgdhsgdhtg hsduyg dhgeygeh deyegf vcd cdmnbycgv bevey e bkw ckwguhvwfvgb dnbdeyhdgbjdbehgd  eyeyhekej efev nuywy nfdvfvufhwbvhjwfyweyfhhifhdfdj ufbefvc</p></div>
+        
+        
+    </div>
+    <div class="dabba" >
+        <div><h1>This is about variable</h1></div>
+       <div class="newbox"><div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div></div> 
+    </div>
+</body>
+</html>

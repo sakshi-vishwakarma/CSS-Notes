@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo selectors</title>
+    <style>
+        input[type='text']{
+            border:2px solid black;
+            padding:23px;
+        }
+        .container{
+             display:block;
+             margin:auto;
+             width:233px;
+        }
+        input{
+            display:block;
+        }
+        a[target]{
+            color:black;
+            font-size:50px;
+            font-family:times new roman;
+        }
+a[target='_self']{
+            color:pink;
+            font-size:50px;
+            font-family:times new roman;
+        }
+        
+        li:nth-child(2n+0){
+            color:pink;
+        }
+         li:nth-child(odd){
+            color:pink;
+        } li:nth-child(even){
+            color:pink;
+        } li:nth-child(2n+0){
+            color:pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https:\\google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="https:\\instagram.com" target="_self">Go to Instgarm</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name:">
+            <input type="password" placeholder="Enter your password:">
+            <input type="submit" placeholder="submit">
+            
+        </form>
+        <ul>
+            <li class="item" id="item1">Item 1</li>
+            <li class="item" id="item2">Item 2</li>
+            <li class="item" id="item3">Item 3</li>
+            <li class="item" id="item4">Item 4</li>
+            <li class="item" id="item5">Item 5</li>
+            <li class="item" id="item6">Item 6</li>
+        </ul>
+    </div>
+</body>
+</html>

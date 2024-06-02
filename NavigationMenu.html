@@ -1,0 +1,142 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Navigation bar and Menu</title>
+        <style>
+            .navbar{
+                background-color:black;
+                  border-radius:14px;
+                  width:116%;
+            }
+            .navbar ul{
+                overflow:auto;
+              
+            }
+            .navbar li{
+            text-style:bold;
+                float:left;
+                list-style:none;
+                margin:13px 20px;
+               
+            }
+            .navbar li a{
+                color:white;
+                
+                text-decoration:none;
+                padding:3px 3px;
+                
+            }
+            .search{
+                float:right;
+                
+                color:black;
+               padding:12px 75px; 
+            }
+            .navbar input{
+            border:2px solid black;
+            border-radius:14px;
+            padding:3px 17px;
+            width:129px;
+                float:right;
+                
+            }
+            .navbar li a:hover{
+                background-color:#002b1d;
+                color:#9e4835;
+            }
+            .top{
+                border:2px solid black;
+                width:116%;
+            }
+            img{
+                margin:auto;
+                display:block;
+                width:34px;
+                background-color:lightgrey;
+            }
+            h3{
+                text-align:center;
+                font-family:times new roman;
+                margin:0px;
+                
+            }
+            .box{
+            border:2px solid black;
+            background-color:lightgrey;
+            font-family:times new roman;
+            margin: 4px 0px;
+            padding:23px;
+            width:23%;
+            display:inline-block;
+                
+            }
+            .container{
+                margin:auto;
+                width:1400px;
+            }
+            .heading{
+                font-style:bold;
+                
+            }
+            .position{
+                border:2px solid black;
+                display:inline-block;
+                width:19%;
+                height;150px;
+                margin:4px;
+                pdding:top 4px;
+            }
+            #box1,#box3{
+                background-color:#29315222;
+                height:56px;
+                position:static;
+                top:3px;
+            }
+            .dabba{
+            margin:4px 270px 0px 0px ;
+                height:150px;
+                border:2px solid black;
+                background-color:;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <div class="search">
+                        <input type="text" id="search" placeholder="Search this website">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <header class="top">
+            <img src="mercedes.jpg" alt="Mercedes">
+            <h3>KNOW ABOUT MERCEDES</h3>
+        </header>
+        <div class="container">
+           <div class="box">
+               <h4 class="heading">Mercedes-Benz</h4>
+               <p>The Mercedes-Benz Logo MeaningTogether, the Mercedes-Benz star's 3 points represent the company's drive for universal motorization — but each point also has its individual meaning. The points represent land, sea, and air — environments the company believed they would one day dominate with Mercedes-Benz engines.</p>
+              </div>
+              
+              <div class="box">
+               <h4 class="heading">Mercedes-Benz</h4>
+               <p>The Mercedes-Benz Logo MeaningTogether, the Mercedes-Benz star's 3 points represent the company's drive for universal motorization — but each point also has its individual meaning. The points represent land, sea, and air — environments the company believed they would one day dominate with Mercedes-Benz engines.</p>
+        </div>
+        
+        <div class="box">
+               <h4 class="heading">Mercedes-Benz</h4>
+               <p>The Mercedes-Benz Logo MeaningTogether, the Mercedes-Benz star's 3 points represent the company's drive for universal motorization — but each point also has its individual meaning. The points represent land, sea, and air — environments the company believed they would one day dominate with Mercedes-Benz engines.</p></div>
+               <div class="dabba">
+               <div class="position" id="box1">This is about the sticky position.</div>
+               <div class="position" id="box2">2</div>
+              <div class="position" id="box3"> <center><b>This is about the sticky position.</b></center></div>
+               <div class="position" id="box4">4</div>
+    </div>
+    </body>
+</html>
